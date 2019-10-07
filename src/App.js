@@ -52,9 +52,7 @@ export default function App() {
     gorevleriKaydet(yeni);
   }
 
-  function gorevleriKaydet(value) {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
-}
+  const gorevleriKaydet = (value) => localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(value));
 
   return (
       <div>
